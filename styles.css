@@ -1,0 +1,26 @@
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.mdl-layout__header-row {
+    height: 220px;
+}
+.mdl-layout__header-row h3{
+    padding-left: 20px;
+}
+.mdl-layout__tab-bar {
+    box-sizing: border-box; /* Prevents bar from pushing right */
+    height: 100%;
+    width: 100%;
+}
+.mdl-layout__tab {
+    height: 64px;
+    line-height: 64px;
+}
+.mdl-layout__tab.is-active {
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color:white;
+}
