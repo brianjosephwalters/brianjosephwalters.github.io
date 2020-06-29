@@ -12,26 +12,127 @@
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" />
         <link rel="stylesheet" href="styles.css" />
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        
+        <script type="text/javascript">
+            var overrideHeaderClick = function() {
+                window.MaterialLayout.prototype.headerClickHandler_ = function() {};
+            }
+        </script>
     </head>
-    <body class="mdl-color--grey-100 mdl-color-text--grey-700">
-        <div class="mdl-layout--fixed-header">
-            <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-                <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    <body class="mdl-color--grey-100 mdl-color-text--grey-700" onload="overrideHeaderClick();">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+            <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top">
+                <div class="mdl-layout__header-row">
                     <img src="images/hardhat-square.jpg" class="rounded">
                     <h3>Brian J. Walters</h3>
                 </div>
-                <div class="mdl-layout__tab-bar mdl-color--primary-dark">
-                    <a href="" class="mdl-layout__tab is-active">Home</a>
-                    <a href="" class="mdl-layout__tab">About</a>
-                    <a href="" class="mdl-layout__tab">Career</a>
-                    <a href="" class="mdl-layout__tab">Technologies</a>
+                <div class="mdl-layout__tab-bar mdl-color--primary-dark mdl-js-ripple-effect">
+                    <a href="#about" class="mdl-layout__tab is-active">About</a>
+                    <a href="#education" class="mdl-layout__tab">Education</a>
+                    <a href="#career" class="mdl-layout__tab">Career</a>
+                    <a href="#technologies" class="mdl-layout__tab">Technologies</a>
+                    <a href="#resume" class="mdl-layout__tab">Resume</a>
                 </div>
             </header>
             <main class="mdl-layout__content">
-
+                <div class="page-content">
+                    <div class="mdl-layout__tab-panel is-active" id="about">
+                        <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <header class="mdl-cell mdl-cell--3-col mdl-color--teal-100 mdl-color-text--white">
+                            </header>
+                            <div class="mdl-card mdl-cell mdl-cell--9-col">
+                                <div class="mdl-card__supporting-text">
+                                    <h4>New Orleans</h4>
+                                    Donec mattis vitae tellus nec mattis. In est sem, fermentum ut tincidunt quis, vestibulum vel ligula. Maecenas viverra elit ut mauris mollis placerat. Donec vel aliquam diam. Nulla at laoreet ligula. Phasellus sagittis purus sed justo porttitor tempor. Sed eu justo nisl. Morbi quis velit ac ante mollis dictum sed sit amet eros. Cras facilisis eleifend rhoncus.
+                                </div>
+                                <div class="mdl-card__actions"><a class="mdl-button" href="">New Orleans, LA</a></div>
+                            </div>
+                        </section>
+                        <section id="reading" class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <div class="mdl-card mdl-cell mdl-cell--12-col">
+                                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                                    <h4 class="mdl-cell mdl-cell--12-col section__title">What I'm Reading</h4>
+                                    <div class="mdl-cell mdl-cell--2-col">
+                                        <div class="section__circle mdl-color--primary"></div>
+                                    </div>                      
+                                    <div class="section__text mdl-cell mdl-cell--10-col">
+                                        <h5>Team of Rivals</h5>
+                                        The Political Genius of Abraham Lincoln by <a href="">Doris Kearns Goodwin</a>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--2-col">
+                                        <div class="section__circle mdl-color--primary"></div>
+                                    </div> 
+                                    <div class="section__text mdl-cell mdl-cell--10-col">
+                                        <h5>The Grapes of Wrath</h5>
+                                        By <a href="">John Steinbeck</a>
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--2-col">
+                                        <div class="section__circle mdl-color--primary"></div>
+                                    </div> 
+                                    <div class="section__text mdl-cell mdl-cell--10-col">
+                                        <h5>The Hobbit</h5>
+                                        There and Back Again By <a href="">J. R. R. Tolkien</a>
+                                    </div>
+                                </div>
+                                <div class="mdl-card__actions"><a class="mdl-button" href="">My Library</a></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="mdl-layout__tab-panel" id="education">
+                        <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <header class="mdl-cell mdl-cell--1-col mdl-color--teal-100 mdl-color-text--white"></header>
+                            <div class="mdl-card mdl-cell mdl-cell--11-col">
+                                <div class="mdl-card__supporting-text">
+                                    <h3>The University of New Orleans</h3>
+                                    <h5>M.S., Computers Science, May 2015</h5>
+                                    Donec mattis vitae tellus nec mattis. In est sem, fermentum ut tincidunt quis, vestibulum vel ligula. Maecenas viverra elit ut mauris mollis placerat. Donec vel aliquam diam. Nulla at laoreet ligula. Phasellus sagittis purus sed justo porttitor tempor. Sed eu justo nisl. Morbi quis velit ac ante mollis dictum sed sit amet eros. Cras facilisis eleifend rhoncus.
+                                </div>
+                                <div class="mdl-card__actions"><a class="mdl-button" href="">New Orleans, LA</a></div>
+                            </div>
+                        </section>
+                        <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <div class="mdl-card mdl-cell mdl-cell--11-col">
+                                <div class="mdl-card__supporting-text mdl-card__supporting-text--right">
+                                    <h3>Tulane University</h3>
+                                    Donec mattis vitae tellus nec mattis. In est sem, fermentum ut tincidunt quis, vestibulum vel ligula. Maecenas viverra elit ut mauris mollis placerat. Donec vel aliquam diam. Nulla at laoreet ligula. Phasellus sagittis purus sed justo porttitor tempor. Sed eu justo nisl. Morbi quis velit ac ante mollis dictum sed sit amet eros. Cras facilisis eleifend rhoncus.
+                                </div>
+                                <div class="mdl-card__actions"><a class="mdl-button" href="">New Orleans, LA</a></div>
+                            </div>
+                            <header class="mdl-cell mdl-cell--1-col mdl-color--teal-100 mdl-color-text--white"></header>
+                        </section>
+                        <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <header class="mdl-cell mdl-cell--1-col mdl-color--teal-100 mdl-color-text--white"></header>
+                            <div class="mdl-card mdl-cell mdl-cell--11-col">
+                                <div class="mdl-card__supporting-text">
+                                    <h4>Towson University</h4>
+                                    Donec mattis vitae tellus nec mattis. In est sem, fermentum ut tincidunt quis, vestibulum vel ligula. Maecenas viverra elit ut mauris mollis placerat. Donec vel aliquam diam. Nulla at laoreet ligula. Phasellus sagittis purus sed justo porttitor tempor. Sed eu justo nisl. Morbi quis velit ac ante mollis dictum sed sit amet eros. Cras facilisis eleifend rhoncus.
+                                </div>
+                                <div class="mdl-card__actions"><a class="mdl-button" href="">Towson, MD</a></div>
+                            </div>
+                        </section>
+                        <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                            <div class="mdl-card mdl-cell mdl-cell--11-col">
+                                <div class="mdl-card__supporting-text mdl-card__supporting-text--right">
+                                    <h4>Chautauqua Lake High School</h4>
+                                    Donec mattis vitae tellus nec mattis. In est sem, fermentum ut tincidunt quis, vestibulum vel ligula. Maecenas viverra elit ut mauris mollis placerat. Donec vel aliquam diam. Nulla at laoreet ligula. Phasellus sagittis purus sed justo porttitor tempor. Sed eu justo nisl. Morbi quis velit ac ante mollis dictum sed sit amet eros. Cras facilisis eleifend rhoncus.
+                                </div>
+                                <div class="mdl-card__actions"><a class="mdl-button" href="">Mayville, NY</a></div>
+                            </div>
+                            <header class="mdl-cell mdl-cell--1-col mdl-color--teal-100 mdl-color-text--white"></header>
+                        </section>
+                    </div>
+                    <div class="mdl-layout__tab-panel" id="career">
+                         
+                    </div>
+                    <div class="mdl-layout__tab-panel" id="technologies">
+                         
+                    </div>
+                </div>
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">...</div>
+                    <div class="mdl-mini-footer__right-section">...</div>
+                </footer>
             </main>
         </div>
-
+        
     </body>
 </html>
