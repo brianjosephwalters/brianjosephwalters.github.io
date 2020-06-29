@@ -18,14 +18,30 @@ h4 {
     max-height: 48px;
 }
 
+.mdl-layout__header-row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .mdl-layout__header-row:first-of-type {
     height: auto;
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.mdl-layout__header-row h3{
-    padding-left: 20px;
+.mdl-layout__header-row .header-info {
+    display: flex; 
+    flex-direction: column;
+    padding-left: 30px;
 }
+.mdl-layout__header-row .header-info h1 {
+    margin-bottom: 0px;
+}
+.mdl-layout__header-row .header-info div {
+    padding-left: 30px;
+    font-size: smaller;
+}
+
 .mdl-layout__tab-panel {
     padding-top: 40px;
     padding-left: 8px;
@@ -73,4 +89,46 @@ h4 {
 }
 .section__text a {
     text-decoration: none;
+}
+
+.resume-sheet {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 48px;
+}
+
+.resume-sheet .resume-header {
+    display:flex; 
+    flex-wrap: wrap;
+    border-bottom: 4px double gray;
+}
+.resume-sheet .resume-header h1 {
+    flex-grow: 1;
+}
+
+.resume-sheet h3 {
+    margin-bottom: 10px;
+}
+
+.resume-sheet .resume-info {
+    display:flex; 
+    flex-direction: column; 
+    font-size:smaller;
+}
+.resume-sheet .resume-section {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.resume-sheet .job-title {
+    display:flex;
+}
+
+.resume-sheet .job-title :first-child {
+    flex-grow: 1;
+}
+
+.resume-sheet .resume-footer {
+    text-align: right;
 }

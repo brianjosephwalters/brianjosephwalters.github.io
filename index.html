@@ -23,7 +23,12 @@
             <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top">
                 <div class="mdl-layout__header-row">
                     <img src="images/hardhat-square.jpg" class="rounded">
-                    <h3>Brian J. Walters</h3>
+                    <div class="header-info">
+                        <h1>Brian J. Walters</h1>
+                        <div>brian.joseph.walters@gmail.com</div>
+                        <div>https://www.linkedin.com/in/brian-joseph-walters</div>
+                        <div>https://www.github.com/brianjosephwalters</div>
+                    </div>
                 </div>
                 <div class="mdl-layout__tab-bar mdl-color--primary-dark mdl-js-ripple-effect">
                     <a href="#about" class="mdl-layout__tab is-active">About</a>
@@ -126,27 +131,86 @@
                     <div class="mdl-layout__tab-panel" id="technologies">
                          
                     </div>
-                    <div class="mdl-layout__tab-panel" id="resume">
-                        <div class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--8-col">
+                    <div class="mdl-layout__tab-panel " id="resume">
+                        <div class="resume-sheet mdl-color--white mdl-shadow--4dp">
+                            <div class="resume-header">
                                 <h1>Brian J. Walters</h1>
+                                <div class="resume-info">
+                                    <div style="flex-grow: 1;"></div>
+                                    <div class="">brian.joseph.walters@gmail.com</div>
+                                    <div class="">https://www.linkedin.com/in/brian-joseph-walters</div>
+                                    <div class="">https://www.github.com/brianjosephwalters</div>
+                                    <div style="flex-grow: 1;"></div>
+                                </div>
+                            </div>                                
+                            <div class="resume-section">
+                                <h3>Skill Summary</h3>
+                                <ul>
+                                    <li>Significant professional experience with Java, Python, SQL, Spring, JPA/Hibernate, RESTful APIs, JUnit, Mockito, Angular, AngularJS, Protractor, Karma, CSS/HTML/JavaScript, TypeScript, CloudFoundry, New Relic, Jenkins, Android, Git, Linux, Bash</li>
+                                    <li>Some experience with applications using message passing patterns (AMQP/RabbitMQ), the CQRS pattern, Reactive Spring, JQuery, NodeJS, JSP/Servlet applications, AWS, Docker, SOAP, Tomcat/Glassfish, PowerShell</li>
+                                </ul>
                             </div>
-                            <div class="mdl-cell mdl-cell--4-col">
-                                <div class="mdl-grid">504-252-7136</div>
-                                <div class="mdl-grid">brian.joseph.walters@gmail.com</div>
-                                <div class="mdl-grid">https://www.linkedin.com/in/brian-joseph-walters</div>
-                                <div class="mdl-grid">https://www.github.com/brianjosephwalters</div>
+                            <div class="resume-section">
+                                <h3>Professional Experience</h3>
+                                <div class="job-title">
+                                    <h6>Lead Software Engineer</h6>
+                                    <h6>GE Power/Digital, April 2018 – Present</h6>    
+                                </div>
+                                <p>As a Lead Software Engineer, I provide technical leadership for a business-critical web application composed of seven frontend modules, over twenty backend services, and eight ERP integrations.  I support our custom Jenkins-based CI/CD process that builds, validates, and deploys services to CloudFoundry environments shared by three major applications.  I regularly monitor the health of our ecosystem using NewRelic, perform maintenance and updates to our databases, and engage with our support team to diagnose problems and resolve tickets.  My significant accomplishments include:</p>
+                                <ul>
+                                    <li>Implemented a lossless message passing architecture for a multi-tenant timesheet application using RabbitMQ and custom auditing services.  The application was released in 2019 to 68 countries. </li>
+                                    <li>Planned and implemented a year-long restructuring of a large-scale web application, enabling the business to plan, execute, and monitor field service events at an increased level of granularity.  Coordinated with stakeholders across multiple businesses, documenting technical requirements, clarifying project scope, and communicating progress.  Delivered a zero-downtime release that provided a seamless migration for users across various roles and global regions.</li>
+                                    <li>Took ownership of API gateways built on Netflix Zuul, supporting OAuth2 grants to authenticate against CloudFoundry UAA clients tied to corporate SSO.  Configured custom authorization filters supporting Couchbase Mobile platform.  Implemented a gateway update to Spring Cloud Gateway to support Reactive paradigms.  Configured service discovery using Eureka, including customizations to provide a command-document API to support our Couchbase Lite integration.  </li>
+                                    <li>Engaged with the architecture team to simplify applications and develop site-wide standardization of tech stacks and pipelines so that teams can pivot and surge on high priority deliverables.</li>
+                                    <li>Proposed and performed the decommissioning of legacy services supporting offline-first functionality to simplify our ecosystem and reduce cloud platform costs.</li>
+                                </ul>
+                                <div class="job-title">
+                                    <h6>Software Engineer</h6>
+                                    <h6>GE Power/Digital, May 2015 – April 2018</h6>    
+                                </div>
+                                <p>As a Software Engineer, I was a full-stack developer on a pod of seven team members in a large-scale Agile environment.  I was responsible for delivering high-impact features for a large, cross-platform web application used by field service engineers.  I implemented both backend and frontend features, as well as provided support for our application infrastructure.  With my team, I engaged with stakeholders to clarify business processes, estimate levels of effort, and gain acceptance for completed features.  My significant accomplishments included:</p>
+                                <ul>
+                                    <li>Onboarded and maintained a legacy mobile application with a Spring/OSGi backend and a JQuery frontend.  Re-wrote application using a Spring microservice architecture with an AngularJS frontend.</li>
+                                    <li>Implemented a significant number of backend unit and integration tests using JUnit and Mockito and developed a suite of frontend end-to-end tests using Jasmine and Protractor.  Used testing suite to identify several missed features and bugs prior to a major release of an application re-write.</li>
+                                    <li>Developed responsive, multi-platform web application modules using SpringBoot and AngularJS for a containerized iOS app bundled with Couchbase to support offline-first capabilities.</li>
+                                    <li>Built integrations with core business ERPs using REST, SOAP, and direct JDBC connections.</li>
+                                    <li>Used Hibernate/JPA to write and optimize database integrations with Oracle, Greenplum, and Postgres databases.  </li>
+                                    <li>Planned and coordinated a core architectural migration across six teams.  Worked with product owners to clarify requirements and prioritize features.</li>
+                                </ul>
+                                <div class="job-title">
+                                    <h6>Adjunct Instructor</h6>
+                                    <h6>University of New Orleans, June 2017 – May 2018</h6>    
+                                </div>
+                                <p>I designed and taught Advanced Web Frameworks, a lab-based course covering web application development in a business environment using industry-standard frameworks such as Angular and Spring.  The course introduced students to best practices such as feature refinement, iterative development, version control, and automated testing.  I used repetition and progressive autonomy to prepare students to research and produce a final project implementing technologies and features not covered in the course.</p>
+                                <div class="job-title">
+                                    <h6>GE SWEAP Software Apprentice</h6>
+                                    <h6>GE Capital, January – May 2015</h6>    
+                                </div>
+                                <p>As a Software Engineer Apprentice, I was tasked with learning about business operations, developing leadership skills, and delivering professional software for my team.  Agile methodologies were introduced to our development work and we organized our sprints around Scrum rituals.  I shadowed a mentor to learn about his role and responsibilities as a lead frontend developer for global financial products.  Some of my accomplishments included:</p>
+                                <ul>
+                                    <li>Developed native Android applications supporting various SDK versions on mobile devices.  Successfully released a production-ready mobile Android application for the non-profit French Quarter Festival, Inc.</li>
+                                    <li>Used Mockito and Espresso to write unit and instrumentation tests for our mobile application.</li>
+                                    <li>Worked with SSO service to integrate an Android application with a human resources API.</li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="mdl-grid">
-                            <h3>Skill Summary</h3>
-                            <ul>
-                                <li>Significant professional experience with Java, Python, SQL, Spring, JPA/Hibernate, RESTful APIs, JUnit, Mockito, Angular, AngularJS, Protractor, Karma, CSS/HTML/JavaScript, TypeScript, CloudFoundry, New Relic, Jenkins, Android, Git, Linux, Bash</li>
-                                <li>Some experience with applications using message passing patterns (AMQP/RabbitMQ), the CQRS pattern, Reactive Spring, JQuery, NodeJS, JSP/Servlet applications, AWS, Docker, SOAP, Tomcat/Glassfish, PowerShell</li>
-                            </ul>
-                        </div>
-                        <div class="mdl-grid">
-                            <h3>Professional Experience</h3>
+                            <div class="resume-section">
+                                <h3>Education</h3>
+                                <ul>
+                                    <li>University of New Orleans, M.S., Computer Science, May 2015</li>
+                                    <li>Tulane University, M.A., Philosophy, May 2010</li>
+                                    <li>Towson University, B.A., Psychology, Anthropology, Philosophy, May 2002</li>
+                                </ul>
+                            </div>
+                            <div class="resume-section">
+                                <h3>Training</h3>
+                                <ul>
+                                    <li>Advanced Developing on AWS, AWS Training and Certification.  April 3, 2020</li>
+                                    <li>Spring Cloud Data Flow Developer, Pivotal.  Oct. 07, 2019</li>
+                                </ul>
+                            </div>
+                            <div class="resume-footer mdl-color-text--grey-400">
+                                <p>Last Updated: June 20, 2020</p>
+                            </div>
                         </div>
                     </div>
                 </div>
