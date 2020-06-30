@@ -140,3 +140,41 @@ h4 {
 .resume-sheet .resume-footer {
     text-align: right;
 }
+
+
+.career-card-deck {
+    display:flex; 
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.career-card-brief {
+    /* border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; */
+    display:flex; 
+    flex-direction: column;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.career-card-brief .career-image {
+    height: 200px;
+    width: 200px;
+}
+.career-card-brief .career-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.333334;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    min-height: 56px;
+}
+.career-card-brief .career-short {
+    flex-grow: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
