@@ -70,7 +70,8 @@ h4 {
     margin: 8px 0;
 }
 .section__title {
-    padding-top: 20px;
+    padding-top: 24px;
+    padding-bottom: 16px;
 }
 .section__text {
     flex-grow: 1;
@@ -84,8 +85,12 @@ h4 {
 
 .section__text h5 {
     font-size: inherit;
-    margin: 0;
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
+}
+.section__text h6 {
+    font-size: inherit;
+    margin: 0px;
 }
 .section__text a {
     text-decoration: none;
@@ -149,10 +154,6 @@ h4 {
 }
 
 .career-card-brief {
-    /* border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px; */
     display:flex; 
     flex-direction: column;
     margin-left: 10px;
