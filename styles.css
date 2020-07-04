@@ -32,7 +32,9 @@ h4 {
 .mdl-layout__header-row .header-info {
     display: flex; 
     flex-direction: column;
+    flex-shrink: 1;
     padding-left: 30px;
+    padding-right: 20px;
 }
 .mdl-layout__header-row .header-info h1 {
     margin-bottom: 0px;
@@ -54,9 +56,15 @@ h4 {
     max-width: 860px;
 }
 
+.mdl-card__supporting-text li {
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
 .mdl-card__supporting-text--right {
     align-self: flex-end;
 }
+
 
 .mdl-card__actions {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
@@ -94,6 +102,31 @@ h4 {
 }
 .section__text a {
     text-decoration: none;
+}
+
+.courses {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.course-section {
+    padding-bottom: 5px;
+    font-weight: bold;
+    max-width: 250px;
+    min-width: 100px;
+}
+.course-item {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    min-height: unset;
+    max-width: 250px;
+    min-width: 100px;
+    color: rgba(0,0,0,.54);
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 .resume-sheet {
