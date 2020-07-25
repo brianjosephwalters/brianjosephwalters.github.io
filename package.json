@@ -1,0 +1,23 @@
+{
+  "name": "brianjosephwalters.github.io",
+  "version": "1.0.0",
+  "description": "Builds a static website for Brian J. Walters",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "metalsmith": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianjosephwalters/brianjosephwalters.github.io.git"
+  },
+  "author": "Brian J. Walters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianjosephwalters/brianjosephwalters.github.io/issues"
+  },
+  "homepage": "https://github.com/brianjosephwalters/brianjosephwalters.github.io#readme"
+}
