@@ -1,0 +1,226 @@
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+.mdl-layout__header {
+    transition-duration: 1s;
+}
+
+.mdl-layout__header.is-compact {
+    min-height: auto;
+    max-height: 48px;
+}
+
+.mdl-layout__header-row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.mdl-layout__header-row:first-of-type {
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mdl-layout__header-row .header-info {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.mdl-layout__header-row .header-info h1 {
+    margin-bottom: 0px;
+}
+
+.mdl-layout__header-row .header-info div {
+    padding-left: 30px;
+    font-size: smaller;
+}
+
+.mdl-layout__tab-panel {
+    padding-top: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.mdl-layout__content section {
+    position: relative;
+    margin-bottom: 48px;
+    max-width: 860px;
+}
+
+.mdl-card__supporting-text li {
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.mdl-card__supporting-text--right {
+    align-self: flex-end;
+}
+
+
+.mdl-card__actions {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    text-align: right;
+}
+
+.section__circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    margin: 8px 0;
+}
+
+.section__title {
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.section__text {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-top: 8px;
+}
+
+.section__text:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, .13);
+}
+
+.section__text h5 {
+    font-size: inherit;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.section__text h6 {
+    font-size: inherit;
+    margin: 0px;
+}
+
+.section__text a {
+    text-decoration: none;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.course-section {
+    padding-bottom: 5px;
+    font-weight: bold;
+    max-width: 250px;
+    min-width: 100px;
+}
+
+.course-item {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    min-height: unset;
+    max-width: 250px;
+    min-width: 100px;
+    color: rgba(0, 0, 0, .54);
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.resume-sheet {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 48px;
+}
+
+.resume-sheet .resume-header {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px double gray;
+}
+
+.resume-sheet .resume-header h1 {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.resume-sheet .resume-info {
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    margin-right: 10px;
+}
+
+.resume-sheet .resume-section {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.resume-sheet .resume-section h3 {
+    margin-bottom: 10px;
+}
+
+.resume-sheet .job-title {
+    display: flex;
+}
+
+.resume-sheet .job-title h6 {
+    margin-top: 16px;
+}
+
+.resume-sheet .job-title :first-child {
+    flex-grow: 1;
+}
+
+.resume-sheet .resume-footer {
+    text-align: right;
+}
+
+
+.career-card-deck {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.career-card-brief {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.career-card-brief .career-image {
+    height: 200px;
+    width: 200px;
+}
+
+.career-card-brief .career-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.333334;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    min-height: 56px;
+}
+
+.career-card-brief .career-short {
+    flex-grow: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

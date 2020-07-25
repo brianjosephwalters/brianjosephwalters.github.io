@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Personal website of Brian J. Walters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script type="text/javascript">
+            var overrideHeaderClick = function() {
+                window.MaterialLayout.prototype.headerClickHandler_ = function() {};
+            }
+        </script>
+    </head>
+    <body class="mdl-color--grey-100 mdl-color-text--grey-700" onload="overrideHeaderClick();">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+            <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top">
+                {% include "./partials/header.njk" %}
+            </header>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    {% include "./tabs/tab-about.njk" %}
+                    {% include "./tabs/tab-education.njk" %}
+                    {% include "./tabs/tab-career.njk" %}
+                    {% include "./tabs/tab-technologies.njk" %}
+                    {% include "./tabs/tab-resume.njk" %}
+                </div>
+                <footer class="mdl-mini-footer">
+                    {% include "./partials/footer.njk" %}
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>
